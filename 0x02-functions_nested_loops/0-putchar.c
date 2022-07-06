@@ -1,19 +1,19 @@
-#include "main.h"
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	char *sh = "_putchar";
+#include <unistd.h>
+#include "main.h" 
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
-	_putchar('\n');
+/** 
+ * main - Check description 
+ * Description: It prints the word _putchar, followed by a new line.
+ * Return: 0. 
+ */
+int main(void) 
+{
+	char word[9] = "_putchar";
+	int i;
+
+	for (i = 0; i < 9; i++) 
+		 _putchar(word[i]);
+	_putchar('\n'); 
 
 	return (0);
 }
