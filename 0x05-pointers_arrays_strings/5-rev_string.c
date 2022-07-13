@@ -1,26 +1,48 @@
 /*
  * File: 5-rev_string.c
- * Auth: Jeremiah Ikechukwu Obuseri 
+ * Auth: Jeremiah Ikechukwu Obuseri
  */
 
 #include "main.h"
 
 /**
- * rev_string - Reverses a string.
- * @s: The string to be reversed.
+ * _len - returns the length of a string
+ * @str: a pointer to the string
+ * Return: the length of a string
  */
+
+int _len(char *str)
+{
+	int i, length;
+
+	length = 0;
+	for (i = 0; ; i++)
+	{
+		if (str[i] == '\0')
+			break;
+		length += 1;
+	}
+	return (length);
+}
+
+/**
+ * rev_string - reverses a string
+ * @s: pointer to string we want to modify
+ * Return: nothing
+ */
+
 void rev_string(char *s)
 {
-	int len = 0, index = 0;
-	char tmp;
+	char temp;
+	int j;
+	int len, len1;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= len / 2; index--)
+	len = _len(s);
+	len1 = len - 1;
+	for (j = 0; j < len / 2; j++)
 	{
-		tmp = s[index];
-		s[index] = s[len - index - 1];
-		s[len - index - 1] = tmp;
+		temp = s[j];
+		s[j] = s[len1];
+		s[len1--] = temp;
 	}
 }
