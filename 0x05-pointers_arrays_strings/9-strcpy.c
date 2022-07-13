@@ -1,3 +1,8 @@
+/*
+ * File: 9-strcpy.c
+ * Auth: Jeremiah Ikechukwu Obuseri
+ */
+
 #include "main.h"
 
 /**
