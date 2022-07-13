@@ -1,24 +1,45 @@
 /*
- * File: 4-print_rev.c
+ * File: 5-rev_string.c
  * Auth: Jeremiah Ikechukwu Obuseri
  */
 
 #include "main.h"
 
 /**
- * print_rev - Prints a string in reverse.
- * @s: The string to be printed.
+ * _len - returns the length of a string
+ * @str: a pointer to the string
+ * Return: the length of a string
  */
-void print_rev(char *s)
+
+int _len(char *str)
 {
-	int len = 0, index;
+	int i, length;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= 0; index--)
-		_putchar(s[index]);
-
-	_putchar('\n');
+	length = 0;
+	for (i = 0; ; i++)
+	{
+		if (str[i] == '\0')
+			break;
+		length += 1;
+	}
+	return (length);
 }
 
+/**
+ * print_rev - prints a string, in reverse, followed by a new line.
+ * @s: pointer string to print
+ * Return: nothing
+ */
+
+void print_rev(char *s)
+{
+	int j;
+	int len;
+
+	len = _len(s);
+	for (j = len - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
+	_putchar('\n');
+}
