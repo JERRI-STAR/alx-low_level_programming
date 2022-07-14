@@ -1,8 +1,3 @@
-/*
- * File: 102-magic.c
- * Auth: Jeremiah Ikechukwu Obuseri
- */
-
 #include <stdio.h>
 
 int main(void)
