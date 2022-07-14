@@ -1,6 +1,6 @@
 /*
  * File: 104-print_buffer.c
- * Auth: Jeremaih Ikechukwu Obuseri
+ * Author: Jeremaih Ikechukwu Obuseri
  */
 
 #include <stdio.h>
