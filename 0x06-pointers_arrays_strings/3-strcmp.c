@@ -3,7 +3,6 @@
  * Auth: Jeremiah Ikechukwu Obuseri
  */
 
-#include <stdio.h>
 #include "main.h"
 
 /**
