@@ -1,3 +1,8 @@
+/*
+ * File: main.h
+ * Auth: Jeremiah 
+ */
+
 #ifndef MAIN_H
 #define MAIN_H
 
