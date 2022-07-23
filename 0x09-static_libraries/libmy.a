@@ -1,7 +1,3 @@
- Author:- Jeremiah Ike Obuseri
- File:- libmy.a
-
-
 
 int _putchar(char c);
 int _islower(int c);
