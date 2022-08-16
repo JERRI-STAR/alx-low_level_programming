@@ -3,6 +3,7 @@
  * Auth: Jeremiah Ike Obuseri
  */
 
+#include <stdio.h>
 #include "lists.h"
 
 /**
