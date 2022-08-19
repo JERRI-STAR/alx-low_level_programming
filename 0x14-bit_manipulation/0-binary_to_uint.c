@@ -1,9 +1,9 @@
 /*
- * File: 0-binary_to_uint.c
  * Auth: Jeremiah Ike Obuseri
+ * File: 0-binary_to_uint.c
  */
 
-#include "main.h"
+#include "mainh"
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned int.
